@@ -7,6 +7,6 @@ spring:
     mongodb:
       host: ${AUTH_MONGO:localhost}
       username: user
-      password: ${PASS_MONGO: test}
+      password: ${PASS_MONGO:test}
       database: savemaker
       port: 27017
