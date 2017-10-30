@@ -6,3 +6,7 @@ zuul:
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
+
+management:
+  security:
+    enabled: false
