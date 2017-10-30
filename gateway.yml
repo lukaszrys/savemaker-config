@@ -16,4 +16,4 @@ zuul:
 
 management:
   security:
-    enabled: false
+    enabled: true

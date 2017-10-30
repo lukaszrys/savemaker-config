@@ -1,2 +1,12 @@
 server:
   port: 5000
+  context-path: /uaa
+
+spring:
+  data:
+    mongodb:
+      host: ${AUTH_MONGO:localhost}
+      username: user
+      password: ${PASS_MONGO: test}
+      database: savemaker
+      port: 27017
