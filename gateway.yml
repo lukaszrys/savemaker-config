@@ -13,6 +13,12 @@ zuul:
       url: ${AUTHORIZATION_SERVER_URL:http://localhost:5000}
       stripPrefix: false
       sensitiveHeaders:
+    mail:
+      path: /notification/**
+      serviceId: mail
+      url: ${MAIL_SERVER_URL:http://localhost:8010}
+      stripPrefix: false
+      sensitiveHeaders:
 
 management:
   security:
