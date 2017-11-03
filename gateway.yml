@@ -14,7 +14,7 @@ zuul:
       stripPrefix: false
       sensitiveHeaders:
     mail:
-      path: /notification/**
+      path: /mail/**
       serviceId: mail
       url: ${MAIL_SERVER_URL:http://localhost:8010}
       stripPrefix: false
