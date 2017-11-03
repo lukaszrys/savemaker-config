@@ -10,6 +10,17 @@ spring:
       password: ${PASS_MONGO:test}
       database: mail
       port: 27017
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: savemaker.app
+    password: uypwxzsaumgimzyo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 security:
   oauth2:
@@ -25,16 +36,3 @@ mail:
     unsent:
       cron: 0 6 17 1/1 * ?
       max: 10
-
-spring:
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: savemaker.app
-    password: uypwxzsaumgimzyo
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
