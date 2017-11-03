@@ -29,7 +29,7 @@ security:
       clientSecret: ${MAIL_AUTH_PASS:mail}
       accessTokenUri: ${AUTH_SERVER_URL:http://localhost:5000/uaa/user}
       grant-type: client_credentials
-      scope: server
+      scope: service
 
 mail:
   send:

@@ -1,0 +1,21 @@
+server:
+  port: 8020
+  context-path: /account
+
+spring:
+  data:
+    mongodb:
+      host: ${MAIL_MONGO:localhost}
+      username: user
+      password: ${PASS_MONGO:test}
+      database: account
+      port: 27017
+
+security:
+  oauth2:
+    client:
+      clientId: account
+      clientSecret: ${ACCOUNT_AUTH_PASS:account}
+      accessTokenUri: ${AUTH_SERVER_URL:http://localhost:5000/uaa/user}
+      grant-type: client_credentials
+      scope: service

@@ -19,6 +19,13 @@ zuul:
       url: ${MAIL_SERVER_URL:http://localhost:8010}
       stripPrefix: false
       sensitiveHeaders:
+    account:
+      path: /account/**
+      serviceId: account
+      url: ${ACCOUNT_SERVER_URL:http://localhost:8020}
+      stripPrefix: false
+      sensitiveHeaders:
+
 
 management:
   security:
