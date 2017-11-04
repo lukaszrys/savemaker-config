@@ -13,4 +13,5 @@ eureka:
 security:
   oauth2:
     resource:
+      filter-order: 3
       user-info-uri: ${AUTH_SERVER_USER_URL:http://localhost:5000/uaa/current}
