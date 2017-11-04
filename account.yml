@@ -16,6 +16,6 @@ security:
     client:
       clientId: account
       clientSecret: ${ACCOUNT_AUTH_PASS:account}
-      accessTokenUri: ${AUTH_SERVER_URL:http://localhost:5000/uaa/user}
+      accessTokenUri: ${AUTH_SERVER_TOKEN_URL:http://localhost:5000/uaa/oauth/token}
       grant-type: client_credentials
       scope: service
