@@ -1,3 +1,7 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+
 info:
   description: Save Maker Application
 
