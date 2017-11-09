@@ -1,0 +1,21 @@
+server:
+  port: 8030
+  context-path: /account-statistics
+
+spring:
+  data:
+    mongodb:
+      host: ${MAIL_MONGO:localhost}
+      username: user
+      password: ${PASS_MONGO:test}
+      database: account-statistics
+      port: 27017
+
+security:
+  oauth2:
+    client:
+      clientId: account-statistics
+      clientSecret: ${ACCOUNT_STATS_AUTH_PASS:account-statistics}
+      accessTokenUri: ${AUTH_SERVER_TOKEN_URL:http://localhost:5000/uaa/oauth/token}
+      grant-type: client_credentials
+      scope: service
